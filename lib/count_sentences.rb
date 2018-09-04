@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    self.split(/["."|"!"+|"?"+]/).delete_if{|h| h == " "}.count
+    self.split(/["."|"!"+|"?"+]/).reject{|h| h.so_s.empty?}.count
   end
 end
 
