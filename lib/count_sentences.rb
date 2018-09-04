@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     count_array = []
-    count_arracy << self.split(/["."|"!"|"?"]/)
-    to_count.count  
+    count_array << self.split(/["."|"!"|"?"]/)
+    count_array.count  
   end
 end
